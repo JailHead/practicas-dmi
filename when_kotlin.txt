@@ -1,4 +1,4 @@
-Diego Antonio Angel Rodriguez.
+// Practica 2 - Diego Antonio Angel Rodriguez.
 
 fun main() {
     println("=== DETERMINADOR DE LUGAR DE TRABAJO ===")
@@ -31,4 +31,5 @@ fun main() {
         println("✗ La profesión '$profesion' no está en nuestra base de datos.")
         println("Por favor, verifique que haya escrito correctamente el nombre de la profesión.")
     }
+
 }
