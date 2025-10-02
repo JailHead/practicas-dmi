@@ -1,0 +1,23 @@
+fun main() {
+    val profesiones = listOf("doctor", "enfermera", "secretario", "monje", "ingeniero")
+    
+    profesiones.forEach { profesion ->
+        println("\n--- Comprobando: $profesion ---")
+        procesarProfesion(profesion)
+    }
+}
+
+fun procesarProfesion(profesion: String) {
+    val lugarTrabajo = when (profesion.lowercase()) {
+        "doctor", "doctora", "enfermero", "enfermera" -> "Hospital"
+        "director", "directora", "secretario", "secretaria" -> "Oficina"
+        "monja", "monje", "feligres", "feligresa" -> "Iglesia"
+        else -> "Profesión no reconocida"
+    }
+    
+    if (lugarTrabajo != "Profesión no reconocida") {
+        println("'$profesion' trabaja en: $lugarTrabajo")
+    } else {
+        println("'$profesion' no está en la base de datos")
+    }
+}
